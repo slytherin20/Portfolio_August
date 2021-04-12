@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    margin:0;
+    padding: 5%;
+    padding-bottom: 0;
+    overflow-x: hidden;
+}
+a{  
+    color: black;
+    text-decoration:none;
+}
+/*Navigation tab styling*/
+.portfolio-nav{
+    position: fixed;
+    top: 0;
+    padding:1%;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-item{
+    transition: all 0.5s ease-in-out;
+}
+.name-tag{
+   margin: 0;
+   margin-left: 2%;
+   margin-top:5px;
+}
+.tab-items{
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: auto auto;
+    padding: 30px;
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.item, .colored-navbar-item{
+    padding-bottom: 10px;
+}
+
+/*Homepage styling*/
+.homepage-link{
+    display: none;
+    width: 50%;
+}
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+.titles{
+    width:100%;
+    transition: all 0.7s ease-out;
+}
+.job-title{
+    color:purple;
+    font-size: 5em;
+    margin:5%;
+}
+
+.hidden{
+    display: none;
+}
+.visible{
+    display: inline;
+}
+.homepage_photo{
+    height:250px;
+    width: 250px; 
+}
+
+/* Contact Menu styling */
+.contact-menu{
+    position: fixed;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    top: 30vh;
+}
+.contact-option{
+    background-color: gold;
+    height: 45px;
+    width:45px;
+    margin: 10%;
+    border-radius: 50%;
+}
+.contact-option:hover{
+    transform:rotate(1turn);
+    transition: transform 0.7s ease-in-out;
+}
+.contact-menu:hover{
+    cursor: pointer;
+}
+.icon{
+    margin: 24%;
+}
+.mobile-menu{
+    display: none;
+}
+
+/* Homepage text styling */
+.end-marker{
+    display: inline;
+    width:0;
+    height:1em;
+    border: solid 2px purple;
+}
+.hidden-marker{
+    display: none;
+    transition: all 700ms ease-in-out;
+}
+
+
+/* Sections */
+.sections{
+    padding-top: 10%;
+}
+
+/*About section styling*/
+.about-info{
+    background-color: black;
+    color:white;
+    padding: 5%;
+    text-align: center;
+}
+
+/*Skill list */
+.skills-section{
+    margin: 5%;
+}
+.skills-title,.projects-title{
+    text-align: center;
+}
+.skills-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill-name{
+    display:flex;
+    flex-direction: column-reverse;
+    text-align:center;
+    margin: 3%;;
+}
+.skill-list-images{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
+
+/*Blogs styling*/
+.blogs-section{
+    margin:5%;
+}
+.blog-name{
+    text-align: center;
+}
+.medium-widget-article__row{
+    flex-wrap:wrap;
+}
+.medium-text{
+    float: right;
+}
+/*Credits section */
+.credits{
+    padding:1%;
+    background-color: black;
+    color: white;
+}
+.credits a{
+    color: white;
+}
+.credits a:visited,.credits a:hover{
+    color: white;
+}
+
+/*Links hovered and visited styling */
+.item:hover,.medium-link:hover{
+    border-bottom: 5px solid gold;
+}
+.item:visited,.medium-link:visited,.colored-navbar-item:visited{
+    color:black;
+}
+
+.colored-navbar-item:hover{
+    border-bottom: 5px solid black;
+}
+
+/* Custom scrollbar */
+/* Width of scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+/* Track  */
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background-color: #888; ;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: purple;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 500px){
+    .tab-items{
+        display: none;
+    }
+    .portfolio-nav{
+        justify-content: flex-end;
+    }
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        width: 25%;
+        justify-content: flex-end;
+    }
+    .job-title{
+        font-size:2em;
+    }
+}
+@media screen and (max-width: 300px){
+    body{
+        padding: 0;
+    }
+    .homepage_photo{
+        width: 150px;
+        height: 150px;
+    }
+    a.medium-widget-article__image img{
+        width: 100px;
+    }
+    .homepage-link{
+        width: 75%;
+    }
+}
+
+
+
+
+
