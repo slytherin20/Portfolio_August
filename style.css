@@ -152,7 +152,7 @@ a{
     display:flex;
     flex-direction: column-reverse;
     text-align:center;
-    margin: 3%;;
+    margin: 3%;
 }
 .skill-list-images{
     width:70px;
@@ -173,6 +173,46 @@ a{
 .medium-text{
     float: right;
 }
+
+/*Project section */
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+}
+.project-image{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+.project-btn-grp{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-btn{
+    width: 100px;
+    height:30px;
+    background-color: purple;
+    color: gold;
+    font-weight: bold;
+    border: 1px solid purple;
+    border-radius: 5%;
+}
+.project-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /*Credits section */
 .credits{
     padding:1%;
