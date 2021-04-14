@@ -115,6 +115,7 @@ a{
     width:0;
     height:1em;
     border: solid 2px purple;
+    background-color: purple;
 }
 .hidden-marker{
     display: none;
@@ -258,7 +259,7 @@ a{
 /*Mobile menu */
 .mobile-menu-container{
     position: fixed;
-    top: 38px;
+    top: 40px;
     width:90%;
     text-align:center;
     background: purple;
@@ -267,11 +268,11 @@ a{
 .mobile-menu-list{
     list-style: none;
     font-size: 20px;
-    font-weight: bold;
+    padding:0%;
 }
 .mobile-list-item{
-    padding: 2%;
-    margin:2%;
+    width:80%;
+    margin: auto auto;
     cursor: pointer;
     border-bottom: solid 1px gainsboro;
 }
@@ -291,8 +292,8 @@ a{
     .mobile-menu{
         display: flex;
         align-items: center;
-        width: 25%;
-        justify-content: flex-end;
+        width: 15%;
+        justify-content: center;
     }
     .job-title{
         font-size:2em;
