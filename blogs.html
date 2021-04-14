@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="nav.js" async defer></script>
+    <title>Sonali Gupta</title>
+</head>
+<body>
+    <nav class="portfolio-nav">
+        <a href="#" class="homepage-link"><h2 class="name-tag nav-item">Sonali Gupta</h2></a>
+        <ul class="tab-items nav-item">
+            <li><a href="index.html" class="item home">Home</a></li>
+            <li><a href="index.html#section-1" class="item about">About</a></li>
+            <li><a href="index.html#section-2" class="item skills">Skills</a></li>
+            <li><a href="./blogs.html" class="item blogs">Blogs</a></li>
+            <li><a href="./projects.html" class="item projects">Projects</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <img src="images/menu.png" alt="open menu" class="menu-tab" onClick=navPopUp()>
+            <img src="./images/cancel.png" alt="close menu" class="cancel-tab hidden" onClick=closePopUp() />
+        </div>
+    </nav>
+    <div class="mobile-menu-container hidden">
+        <ul class="mobile-menu-list">
+            <a href="index.html" onClick=closePopUp()> <li class="mobile-list-item">
+                Home
+            </li></a>
+           <a href="index.html#section-1" onClick=closePopUp()> <li class="mobile-list-item">
+                About
+            </li></a>
+           <a href="index.html#section-2" onClick=closePopUp()><li class="mobile-list-item">
+                Skills
+            </li>
+            </a>
+            <a href="./blogs.html" onClick=closePopUp()><li class="mobile-list-item">
+                Blogs
+            </li>
+            </a>
+            <a href="./projects.html" onClick=closePopUp()><li class="mobile-list-item">
+                Projects
+            </li>
+            </a>
+        </ul>
+    </div>
+    <div class="sections" id="section-3">
+        <div class="blogs-section">
+            <h2 class="blog-name">Blogs</h2>
+            <div id="medium-widget"></div>
+            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@sonaligupta2904","postsPerLine":2,"limit":4,"picture":"small","fields":["description","author","publishAt"],"ratio":"square"}})</script>   
+            <span class="medium-text">To read more, visit <a href="https://medium.com/@sonaligupta2904" target="_blank" class="medium-link">medium</a>.</span>     
+        </div>
+    </div>
+    <div class="contact-menu">
+        <a href="mailto:sonaligupta2904@gmail.com" class="contact-option"><img src="images/envelope.png" alt="E-mail icon" class="icon"></a>
+        <a href="https://www.linkedin.com/in/sonali-gpt/" target="_blank" class="contact-option"><img src="images/lkin.png" alt="linkedin icon" class="icon"></a>
+        <a href="https://github.com/slytherin20" target="_blank" class="contact-option"><img src="images/github.png" alt="github icon" class="icon"></a>
+        <a href="https://medium.com/@sonaligupta2904" target="_blank" class="contact-option"><img src="images/medium(1).png" alt="medium icon" class="icon"></a>
+
+    </div>
+</body>
+</html>
