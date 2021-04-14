@@ -255,6 +255,31 @@ a{
     background-color: purple;
 }
 
+/*Mobile menu */
+.mobile-menu-container{
+    position: fixed;
+    top: 38px;
+    width:90%;
+    text-align:center;
+    background: purple;
+    opacity:0.9;
+}
+.mobile-menu-list{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mobile-list-item{
+    padding: 2%;
+    margin:2%;
+    cursor: pointer;
+    border-bottom: solid 1px gainsboro;
+}
+.mobile-list-item:active{
+    transform:scale(1.1);
+    color:white;
+}
+
 /* Responsive styling */
 @media screen and (max-width: 500px){
     .tab-items{

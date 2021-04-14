@@ -5,6 +5,9 @@ const navbarItems = document.querySelectorAll('.item');
 const endMarker = document.querySelector('.end-marker');
 const myName = document.querySelector('.name');
 const myJob = document.querySelector('.job');
+const mobileMenu = document.querySelector('.mobile-menu-container');
+const menuIcon = document.querySelector('.menu-tab');
+const cancelIcon = document.querySelector('.cancel-tab');
 
 // Headline
 function changeTitle(){
@@ -48,3 +51,14 @@ function changeNavbar(){
 window.addEventListener('scroll',changeNavbar);
 
 // Changing navbar for small screen
+function navPopUp(){
+    mobileMenu.classList.remove('hidden');
+    menuIcon.classList.add('hidden');
+    cancelIcon.classList.add('visible');
+}
+
+function closePopUp(){
+    mobileMenu.classList.add('hidden');
+    menuIcon.classList.remove('hidden');
+    cancelIcon.classList.remove('visible');
+}
