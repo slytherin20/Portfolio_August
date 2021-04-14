@@ -16,6 +16,7 @@ function changeTitle(){
     }
     if(!myName.classList.contains('visible')){
         myJob.classList.toggle('visible');
+        
     }
 }
 window.setInterval(changeTitle,1000);

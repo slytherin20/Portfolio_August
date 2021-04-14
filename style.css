@@ -262,13 +262,16 @@ a{
     top: 40px;
     width:90%;
     text-align:center;
-    background: purple;
+    background: black;
     opacity:0.9;
 }
 .mobile-menu-list{
     list-style: none;
     font-size: 20px;
     padding:0%;
+}
+.mobile-menu-list a{
+    color: white;
 }
 .mobile-list-item{
     width:80%;
@@ -282,7 +285,7 @@ a{
 }
 
 /* Responsive styling */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
     .tab-items{
         display: none;
     }
