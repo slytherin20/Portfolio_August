@@ -13,7 +13,7 @@ function changeNavbar(){
         navbarItems.forEach((item)=> item.classList.replace('item','colored-navbar-item'));
         nameTag.style.setProperty('display','inline');
         tabItems.style.setProperty('padding','10px');
-        navBar.style.setProperty('background-color','gold');
+        navBar.style.setProperty('background-color','rgba(14, 13, 13, 0.973)');
     }
     else{
         navbarItems.forEach((item)=> item.classList.replace('colored-navbar-item','item'));

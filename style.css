@@ -2,14 +2,16 @@
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
+html{
+    color:white;
+}
 body{
     margin:0;
-    padding: 5%;
-    padding-bottom: 0;
+    background-color: rgba(14, 13, 13, 0.973);
     overflow-x: hidden;
 }
 a{  
-    color: black;
+    color: gainsboro;
     text-decoration:none;
 }
 /*Navigation tab styling*/
@@ -52,21 +54,25 @@ a{
     width: 50%;
 }
 .homepage{
+    height:100vh;
+    background-image: url("./images/110.jpg");
+}
+.main-homepage-content{
+    width:80%;
+    height:100%;
+    margin:auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    height:100vh;
-
 }
-.titles{
-    width:100%;
-    transition: all 0.7s ease-out;
+.title{
+    color:white;
+    font-size: 2em;
+    width:80%;
 }
 .job-title{
-    color:purple;
-    font-size: 5em;
-    margin:5%;
+    color:rgb(211, 63, 18);
 }
 
 .hidden{
@@ -76,8 +82,7 @@ a{
     display: inline;
 }
 .homepage_photo{
-    height:250px;
-    width: 250px; 
+    width:50%;
 }
 
 /* Contact Menu styling */
@@ -89,7 +94,7 @@ a{
     top: 30vh;
 }
 .contact-option{
-    background-color: gold;
+    background-color: #5cdb95;
     height: 45px;
     width:45px;
     margin: 10%;
@@ -109,19 +114,6 @@ a{
     display: none;
 }
 
-/* Homepage text styling */
-.end-marker{
-    display: inline;
-    width:0;
-    height:1em;
-    border: solid 2px purple;
-    background-color: purple;
-}
-.hidden-marker{
-    display: none;
-    transition: all 700ms ease-in-out;
-}
-
 
 /* Sections */
 .sections{
@@ -130,18 +122,21 @@ a{
 
 /*About section styling*/
 .about-info{
-    background-color: black;
     color:white;
-    padding: 5%;
-    text-align: center;
+    background-color: rgba(27, 25, 25, 0.973);
+    line-height:1.5rem;
+}
+.about-me,.skills-title,.projects-title,.blogs-title{
+    color:rgb(211, 63, 18);
+    text-decoration: underline;
+    text-align: left;
 }
 
 /*Skill list */
-.skills-section{
-    margin: 5%;
-}
-.skills-title,.projects-title{
-    text-align: center;
+.skills-section,.projects-section,.blogs-section,.about-info{
+padding:5%;
+ width:80%;
+ margin:auto;
 }
 .skills-list{
     display:flex;
@@ -156,9 +151,8 @@ a{
     margin: 3%;
 }
 .skill-list-images{
-    width:70px;
-    height:70px;
-    border-radius: 50%;
+    width:50px;
+    height:50px;
 }
 
 /*Blogs styling*/
@@ -179,7 +173,7 @@ a{
 .projects-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .project{
     display: flex;
@@ -188,11 +182,13 @@ a{
     align-items: center;
     width: 250px;
     height: 350px;
+    padding:2%;
+    background-color: rgba(27, 25, 25, 0.973);
+    border-radius:2%;
 }
 .project-image{
     width: 150px;
     height:150px;
-    border-radius: 50%;
 }
 .project-btn-grp{
     width: 100%;
@@ -200,14 +196,21 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.projects-and-btn{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 .project-btn{
     width: 100px;
     height:30px;
-    background-color: purple;
-    color: gold;
+    background-color: #5cdb95;
+    color: black;
     font-weight: bold;
-    border: 1px solid purple;
-    border-radius: 5%;
+    border: 1px solid #5cdb95;;
+}
+.view-all{
+    margin:20px auto;
 }
 .project-btn:hover{
     transform: scale(1.1);
@@ -229,14 +232,14 @@ a{
 
 /*Links hovered and visited styling */
 .item:hover,.medium-link:hover{
-    border-bottom: 5px solid gold;
+    border-bottom: 5px solid rgb(211, 63, 18) 
 }
 .item:visited,.medium-link:visited,.colored-navbar-item:visited{
-    color:black;
+    color:gainsboro;
 }
 
 .colored-navbar-item:hover{
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(211, 63, 18);
 }
 
 /* Custom scrollbar */
@@ -250,10 +253,10 @@ a{
 }
 /* Handle */
 ::-webkit-scrollbar-thumb{
-    background-color: #888; ;
+    background-color: #888;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: purple;
+    background-color: rgba(27, 25, 25, 0.973);
 }
 
 /*Mobile menu */
