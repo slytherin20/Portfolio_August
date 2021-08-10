@@ -19,46 +19,45 @@
             <li><a href="./projects.html" class="item projects">Projects</a></li>
         </ul>
         <div class="mobile-menu">
-            <img src="images/menu.png" alt="open menu" class="menu-tab" onClick=navPopUp()>
-            <img src="./images/cancel.png" alt="close menu" class="cancel-tab hidden" onClick=closePopUp() />
+            <img src="https://i.imgur.com/lKmPNYa.png" alt="open menu" class="menu-tab nav-popup">
+            <img src="https://i.imgur.com/LRtaCiZ.png" alt="close menu" class="cancel-tab hidden close-popup" />
         </div>
     </nav>
     <div class="mobile-menu-container hidden">
         <ul class="mobile-menu-list">
-            <a href="index.html" onClick=closePopUp()> <li class="mobile-list-item">
+            <a href="index.html" class="close-popup" > <li class="mobile-list-item">
                 Home
             </li></a>
-           <a href="index.html#section-1" onClick=closePopUp()> <li class="mobile-list-item">
+           <a href="index.html#section-1" class="close-popup"> <li class="mobile-list-item">
                 About
             </li></a>
-           <a href="index.html#section-2" onClick=closePopUp()><li class="mobile-list-item">
+           <a href="index.html#section-2" class="close-popup"><li class="mobile-list-item">
                 Skills
             </li>
             </a>
-            <a href="./blogs.html" onClick=closePopUp()><li class="mobile-list-item">
+            <a href="./blogs.html" class="close-popup"><li class="mobile-list-item">
                 Blogs
             </li>
             </a>
-            <a href="./projects.html" onClick=closePopUp()><li class="mobile-list-item">
+            <a href="./projects.html" class="close-popup"><li class="mobile-list-item">
                 Projects
             </li>
             </a>
         </ul>
     </div>
-    <div class="sections" id="section-3">
+    <div class="sections" id="section-3 blog-page">
         <div class="blogs-section">
-            <h2 class="blog-name">Blogs</h2>
+            <h3 class="blogs-title">Blogs</h3>
             <div id="medium-widget"></div>
             <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@sonaligupta2904","postsPerLine":2,"limit":4,"picture":"small","fields":["description","author","publishAt"],"ratio":"square"}})</script>   
-            <span class="medium-text">To read more, visit <a href="https://medium.com/@sonaligupta2904" target="_blank" class="medium-link">medium</a>.</span>     
+            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@sonaligupta2904","postsPerLine":1,"limit":10,"picture":"small","fields":["description","author","publishAt"],"ratio":"square"}})</script>   
         </div>
     </div>
     <div class="contact-menu">
-        <a href="mailto:sonaligupta2904@gmail.com" class="contact-option"><img src="images/envelope.png" alt="E-mail icon" class="icon"></a>
-        <a href="https://www.linkedin.com/in/sonali-gpt/" target="_blank" class="contact-option"><img src="images/lkin.png" alt="linkedin icon" class="icon"></a>
-        <a href="https://github.com/slytherin20" target="_blank" class="contact-option"><img src="images/github.png" alt="github icon" class="icon"></a>
-        <a href="https://medium.com/@sonaligupta2904" target="_blank" class="contact-option"><img src="images/medium(1).png" alt="medium icon" class="icon"></a>
+        <a href="mailto:sonaligupta2904@gmail.com" class="contact-option"><img src="https://i.imgur.com/0P2n3Fs.png" alt="E-mail icon" class="icon"></a>
+        <a href="https://www.linkedin.com/in/sonali-gpt/" target="_blank" class="contact-option"><img src="https://i.imgur.com/0ct1JDv.png" alt="linkedin icon" class="icon"></a>
+        <a href="https://github.com/slytherin20" target="_blank" class="contact-option"><img src="https://i.imgur.com/1SmRj6j.png" alt="github icon" class="icon"></a>
+        <a href="https://medium.com/@sonaligupta2904" target="_blank" class="contact-option"><img src="https://i.imgur.com/1efMtY1.png" alt="medium icon" class="icon"></a>
 
     </div>
 </body>

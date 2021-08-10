@@ -19,27 +19,27 @@
                 <li><a href="./projects.html" class="item projects">Projects</a></li>
             </ul>
             <div class="mobile-menu">
-                <img src="images/menu.png" alt="open menu" class="menu-tab" onClick=navPopUp()>
-                <img src="./images/cancel.png" alt="close menu" class="cancel-tab hidden" onClick=closePopUp() />
+                <img src="https://i.imgur.com/lKmPNYa.png" alt="open menu" class="menu-tab nav-popup">
+                <img src="https://i.imgur.com/LRtaCiZ.png" alt="close menu" class="cancel-tab hidden close-popup" />
             </div>
         </nav>
         <div class="mobile-menu-container hidden">
             <ul class="mobile-menu-list">
-                <a href="index.html" onClick=closePopUp()> <li class="mobile-list-item">
+                <a href="index.html" class="close-popup" > <li class="mobile-list-item">
                     Home
                 </li></a>
-               <a href="#section-1" onClick=closePopUp()> <li class="mobile-list-item">
+               <a href="#section-1" class="close-popup"> <li class="mobile-list-item">
                     About
                 </li></a>
-               <a href="#section-2" onClick=closePopUp()><li class="mobile-list-item">
+               <a href="#section-2" class="close-popup"><li class="mobile-list-item">
                     Skills
                 </li>
                 </a>
-                <a href="./blogs.html" onClick=closePopUp()><li class="mobile-list-item">
+                <a href="./blogs.html" class="close-popup"><li class="mobile-list-item">
                     Blogs
                 </li>
                 </a>
-                <a href="./projects.html" onClick=closePopUp()><li class="mobile-list-item">
+                <a href="./projects.html" class="close-popup"><li class="mobile-list-item">
                     Projects
                 </li>
                 </a>
@@ -52,10 +52,10 @@
           <img src="images/113.svg" alt="photo" class="homepage_photo">      
         </div>
              <div class="contact-menu">
-            <a href="mailto:sonaligupta2904@gmail.com" class="contact-option"><img src="images/envelope.png" alt="E-mail icon" class="icon"></a>
-            <a href="https://www.linkedin.com/in/sonali-gpt/" target="_blank" class="contact-option"><img src="images/lkin.png" alt="linkedin icon" class="icon"></a>
-            <a href="https://github.com/slytherin20" target="_blank" class="contact-option"><img src="images/github.png" alt="github icon" class="icon"></a>
-            <a href="https://medium.com/@sonaligupta2904" target="_blank" class="contact-option"><img src="images/medium(1).png" alt="medium icon" class="icon"></a>
+            <a href="mailto:sonaligupta2904@gmail.com" class="contact-option"><img src="https://i.imgur.com/0P2n3Fs.png" alt="E-mail icon" class="icon"></a>
+            <a href="https://www.linkedin.com/in/sonali-gpt/" target="_blank" class="contact-option"><img src="https://i.imgur.com/0ct1JDv.png" alt="linkedin icon" class="icon"></a>
+            <a href="https://github.com/slytherin20" target="_blank" class="contact-option"><img src="https://i.imgur.com/1SmRj6j.png" alt="github icon" class="icon"></a>
+            <a href="https://medium.com/@sonaligupta2904" target="_blank" class="contact-option"><img src="https://i.imgur.com/1efMtY1.png" alt="medium icon" class="icon"></a>
 
         </div>
     </div>
@@ -66,7 +66,7 @@
             <p>I am a UI enthusiast, based in New Delhi, India. I did B.Tech in Computer Science and Engineering and currently learning web development. I have made few projects 
                 in the same, have a look at the project section.
                 <br/>
-                One quote I like to follow everyday is -<br/>
+                One of my favourite quote is -<br/>
                 <i>"Never let the fear of striking out keep you from playing the game" -</i>Babe Ruth
             </p>
             </div>
@@ -82,6 +82,7 @@
                 <div class="skill-name"><span>JavaScript</span><img src="https://i.imgur.com/f4Qt7ZG.png"  class="skill-list-images" alt="javascript"></div>
                 <div class="skill-name"><span>React.js</span><img src="https://i.imgur.com/r6jPF6Y.png" class="skill-list-images" alt="react.js"></div>
                 <div class="skill-name"><span>Git</span><img src="https://i.imgur.com/WSycaVr.png" class="skill-list-images alt="Git></div>
+                <div class="skill-name"><span>Firebase</span><img src="https://i.imgur.com/mMzwTzg.png" class="skill-list-images" alt="Firebase"/></div>
             </div>
         </div>
     </div>
@@ -122,13 +123,17 @@
             </div>
            </div>
     </div>
-    <div class="sections" id="section-4">
+    <div class="sections" id="section-3">
         <div class="blogs-section">
-            <h3 class="blogs-title">Blogs</h3>
-            <div class="blogs-list">
-
+            <h3 class="blogs-title">Blogs</h2>
+            <div class="blog-and-btn">
+                <div id="medium-widget"></div>
+            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@sonaligupta2904","postsPerLine":1,"limit":1,"picture":"small","fields":["description","author","publishAt"],"ratio":"square"}})</script>   
+            <a href="blogs.html"><button class="project-btn view-all">View All</button></a>    
+       
             </div>
-        </div>
+         </div>
     </div>
     <footer class="credits">
         <div>Icons made by 

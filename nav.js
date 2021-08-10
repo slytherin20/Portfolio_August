@@ -5,6 +5,8 @@ const nameTag = document.querySelector('.homepage-link');
 const tabItems = document.querySelector('.tab-items');
 const navBar = document.querySelector('.portfolio-nav');
 const navbarItems = document.querySelectorAll('.item');
+const navLink = document.querySelectorAll(".nav-popup");
+const closePopUpBtn = document.querySelectorAll(".close-popup");
 //Navbar toggle
 
 function changeNavbar(){
@@ -24,6 +26,8 @@ function changeNavbar(){
     }
 }
 window.addEventListener('scroll',changeNavbar);
+navLink.forEach((link)=> link.addEventListener("click",navPopUp))
+closePopUpBtn.forEach((btn)=> btn.addEventListener("click",closePopUp))
 
 // Changing navbar for small screen
 function navPopUp(){
