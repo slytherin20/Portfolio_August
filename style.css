@@ -159,29 +159,68 @@ a{
 
 /*Blogs styling*/
 .blog-name{
-    text-align: center;
+    margin:0;
 }
 .blog-and-btn{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
-.medium-widget-article__row{
-    flex-wrap:wrap;
-}
-.medium-text{
-    float: right;
-}
-.medium-widget-article__title,
-.medium-widget-article__description,
-.medium-widget-article__author-name,
-.medium-widget-article__date{
-    color:white !important;
-}
-.medium-widget-article__item{
-    background-color: rgba(27, 25, 25, 0.973) ;
+.blog{
+    display:flex;
+    background-color: rgba(27, 25, 25, 0.973);
+    padding:14px;
     margin-bottom:20px;
 }
+.blog .blog-name{
+    color:white;
+}
+.blog-content{
+    padding: 15px;
+}
+.blog-desc{
+    margin-top:5px;
+    line-height: 1.3em;
+}
+.author-img{
+    max-width: 30px;
+    max-height:30px;
+    border-radius: 50%;
+}
+.blog-name{
+    display: inline-block;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}
+.blog-img{
+    width:150px;
+    height:148.99px;
+}
+.blog-img,.blog-name{
+    cursor:pointer;
+}
+.extra-info{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:5px;
+}
+.author{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right:10px;
+}
+.author-name{
+    line-height: 1em;
+    margin-left:10px;
+}
+.blog-date{
+    margin:0 5px;
+    display:flex;
+    align-items: center;
+}
+
 /*Project section */
 .projects-list{
     display: flex;
@@ -325,23 +364,32 @@ a{
         width: 15%;
         justify-content: center;
     }
-    .medium-widget-article__grid{
+    .blog{
         flex-direction: column;
+        align-items: center;
     }
-    .medium-widget-article__image{
-        margin:auto;
+    .blogs-section{
+        width:90%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .extra-info{
+        font-size:14px;
+    }
+    .blog-desc{
+        font-size:14px;
     }
 }
 @media screen and (max-width: 300px){
-    body{
+    body,.blog-content{
         padding: 0;
+    }
+    .blog-content{
+        padding-top:15px;
     }
     .homepage_photo{
         width: 260px;
         height: 260px;
-    }
-    a.medium-widget-article__image img{
-        width: 100px;
     }
     .homepage-link{
         width: 75%;
