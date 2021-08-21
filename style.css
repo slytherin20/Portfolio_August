@@ -177,6 +177,7 @@ a{
 }
 .blog-content{
     padding: 15px;
+    width:100%;
 }
 .blog-desc{
     margin-top:5px;
@@ -196,6 +197,9 @@ a{
 .blog-img{
     width:150px;
     height:148.99px;
+}
+.blog-btn{
+    float:right;
 }
 .blog-img,.blog-name{
     cursor:pointer;
